@@ -5,9 +5,15 @@ import { Button } from '../ui/Button';
 import heroBeardDetail from '../../assets/hero-beard-detail.png';
 
 const IMAGES = [
-  'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&q=80', // Barbershop interior
-  'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80', // Haircut
-  heroBeardDetail, // Generated Beard detail
+  'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80',
+  heroBeardDetail,
+];
+
+const IMAGE_ALTS = [
+  'Interno della Barberia Al Barbé a Omegna — ambiente curato e professionale',
+  'Taglio classico da uomo eseguito da Filippo Giacobini alla Barberia Al Barbé di Omegna',
+  'Dettaglio della cura della barba — rasatura tradizionale alla Barberia Al Barbé',
 ];
 
 export const HeroCarousel = () => {
@@ -27,7 +33,7 @@ export const HeroCarousel = () => {
         <motion.img
           key={currentIndex}
           src={IMAGES[currentIndex]}
-          alt={`Barbershop hero ${currentIndex + 1}`}
+          alt={IMAGE_ALTS[currentIndex]}
           className="absolute inset-0 h-full w-full object-cover"
           initial={{ opacity: 0, scale: 1.05 }}
           animate={{ opacity: 1, scale: 1 }}

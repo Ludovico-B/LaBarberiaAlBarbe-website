@@ -1,0 +1,28 @@
+# robots.txt — La Barberia Al Barbé
+# https://labarberiaalbarbe.vercel.app
+
+# Permetti a tutti i crawler (Google, Bing, AI bots, ecc.)
+User-agent: *
+Allow: /
+
+# AI crawlers specifici
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Sitemap
+Sitemap: https://labarberiaalbarbe.vercel.app/sitemap.xml

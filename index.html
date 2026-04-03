@@ -1,10 +1,187 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+
+    <!-- Primary SEO -->
+    <title>La Barberia Al Barbé — Barbiere a Omegna (VB) | Filippo Giacobini</title>
+    <meta name="description" content="La Barberia Al Barbé di Filippo Giacobini: tagli classici, rasatura tradizionale e cura della barba nel cuore di Omegna. Via Alberganti 17. Aperto mar–ven e sabato." />
+    <meta name="keywords" content="barbiere omegna, barberia omegna, taglio capelli uomo omegna, rasatura omegna, barba omegna, filippo giacobini barbiere, verbano cusio ossola barbiere, acconciatore uomo omegna" />
+    <meta name="author" content="Filippo Giacobini" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://labarberiaalbarbe.vercel.app/" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn, ecc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="La Barberia Al Barbé" />
+    <meta property="og:title" content="La Barberia Al Barbé — Barbiere a Omegna | Filippo Giacobini" />
+    <meta property="og:description" content="Taglio classico, rasatura tradizionale e cura della barba nel cuore di Omegna. Prenota ora al +39 353 4559234." />
+    <meta property="og:url" content="https://labarberiaalbarbe.vercel.app/" />
+    <meta property="og:locale" content="it_IT" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="La Barberia Al Barbé — Barbiere a Omegna | Filippo Giacobini" />
+    <meta name="twitter:description" content="Taglio classico, rasatura tradizionale e cura della barba nel cuore di Omegna. Via Alberganti 17." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- JSON-LD Structured Data: HairSalon -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "HairSalon",
+          "@id": "https://labarberiaalbarbe.vercel.app/#barberia",
+          "name": "La Barberia Al Barbé",
+          "description": "Barberia artigianale nel cuore di Omegna che offre tagli classici, rasatura tradizionale e cura della barba con tecnica e passione.",
+          "url": "https://labarberiaalbarbe.vercel.app",
+          "telephone": "+393534559234",
+          "email": "",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Via Alberganti, 17",
+            "addressLocality": "Omegna",
+            "addressRegion": "VB",
+            "postalCode": "28887",
+            "addressCountry": "IT"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 45.8780,
+            "longitude": 8.4094
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "08:30",
+              "closes": "12:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "14:30",
+              "closes": "19:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Saturday"],
+              "opens": "08:30",
+              "closes": "17:30"
+            }
+          ],
+          "employee": {
+            "@id": "https://labarberiaalbarbe.vercel.app/#filippo-giacobini"
+          },
+          "founder": {
+            "@id": "https://labarberiaalbarbe.vercel.app/#filippo-giacobini"
+          },
+          "sameAs": [
+            "https://www.instagram.com/labarberia_albarbe/"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servizi Barberia Al Barbé",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Taglio Classico",
+                  "provider": { "@id": "https://labarberiaalbarbe.vercel.app/#barberia" }
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Rasatura Completa",
+                  "provider": { "@id": "https://labarberiaalbarbe.vercel.app/#barberia" }
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Taglio a Forbice",
+                  "provider": { "@id": "https://labarberiaalbarbe.vercel.app/#barberia" }
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Taglio Sfumato",
+                  "provider": { "@id": "https://labarberiaalbarbe.vercel.app/#barberia" }
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Rasatura Tradizionale",
+                  "provider": { "@id": "https://labarberiaalbarbe.vercel.app/#barberia" }
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Sagomatura della Barba",
+                  "provider": { "@id": "https://labarberiaalbarbe.vercel.app/#barberia" }
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Trattamento Barba Lunga",
+                  "provider": { "@id": "https://labarberiaalbarbe.vercel.app/#barberia" }
+                }
+              }
+            ]
+          },
+          "priceRange": "€€",
+          "currenciesAccepted": "EUR",
+          "paymentAccepted": "Contanti, Carta di Credito",
+          "areaServed": [
+            { "@type": "City", "name": "Omegna" },
+            { "@type": "City", "name": "Verbania" },
+            { "@type": "AdministrativeArea", "name": "Verbano-Cusio-Ossola" }
+          ],
+          "image": "https://labarberiaalbarbe.vercel.app/foto-barbiere.png"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://labarberiaalbarbe.vercel.app/#filippo-giacobini",
+          "name": "Filippo Giacobini",
+          "jobTitle": "Barbiere",
+          "worksFor": {
+            "@id": "https://labarberiaalbarbe.vercel.app/#barberia"
+          },
+          "sameAs": [
+            "https://www.instagram.com/labarberia_albarbe/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://labarberiaalbarbe.vercel.app/#website",
+          "url": "https://labarberiaalbarbe.vercel.app",
+          "name": "La Barberia Al Barbé",
+          "description": "Sito ufficiale della Barberia Al Barbé di Filippo Giacobini, Omegna (VB).",
+          "inLanguage": "it-IT",
+          "publisher": {
+            "@id": "https://labarberiaalbarbe.vercel.app/#barberia"
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

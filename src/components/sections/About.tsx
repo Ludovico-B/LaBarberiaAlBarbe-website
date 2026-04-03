@@ -36,7 +36,11 @@ export const About = () => {
             <div className="relative aspect-[2/3] w-full max-w-md overflow-hidden rounded-sm shadow-xl">
               <img 
                 src="/foto-barbiere.png" 
-                alt="Il nostro barbiere" 
+                alt="Filippo Giacobini, barbiere della Barberia Al Barbé di Omegna"
+                width={480}
+                height={720}
+                loading="lazy"
+                decoding="async"
                 className="h-full w-full object-cover object-top transition-transform duration-700 hover:scale-105"
               />
             </div>
